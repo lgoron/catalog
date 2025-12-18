@@ -1,0 +1,382 @@
+ 
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f5f7fa;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        /* Шапка сайта */
+        header {
+            background-color: #1a365d;
+            color: white;
+            padding: 15px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        .company-logo {
+            width: 60px;
+            height: 60px;
+            background-color: white;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+        }
+        
+        .company-logo img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+        
+        .site-title {
+            font-size: 1.8rem;
+            font-weight: 700;
+        }
+        
+        .nav-buttons {
+            display: flex;
+            gap: 20px;
+        }
+        
+        .nav-btn {
+            background-color: #2d50a7;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        
+        .nav-btn:hover {
+            background-color: #3a5fc8;
+            transform: translateY(-2px);
+        }
+        
+        .search-container {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .search-input {
+            padding: 10px 15px;
+            border-radius: 6px;
+            border: none;
+            width: 250px;
+            font-size: 1rem;
+        }
+        
+        .search-btn {
+            background-color: #e63946;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        
+        .search-btn:hover {
+            background-color: #ff4d5a;
+        }
+        
+        /* Основной контент */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 30px 20px;
+        }
+        
+        /* Секция с фото ноутбука */
+        .laptop-image-section {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        .laptop-main-img {
+            max-width: 800px;
+            width: 100%;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+        }
+        
+        /* Название ноутбука */
+        .laptop-title {
+            text-align: center;
+            font-size: 2.8rem;
+            color: #1a365d;
+            margin-bottom: 40px;
+            font-weight: 800;
+        }
+        
+        /* Модификации слева/справа */
+        .modifications-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 60px;
+        }
+        
+        .modifications-left, .modifications-right {
+            background-color: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+        }
+        
+        .section-title {
+            font-size: 1.8rem;
+            color: #1a365d;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #2d50a7;
+        }
+        
+        .mod-list {
+            list-style-type: none;
+        }
+        
+        .mod-item {
+            padding: 12px 0;
+            border-bottom: 1px solid #eee;
+            font-size: 1.1rem;
+        }
+        
+        .mod-item:last-child {
+            border-bottom: none;
+        }
+        
+        .mod-item i {
+            color: #2d50a7;
+            margin-right: 10px;
+        }
+        
+        /* Подробная информация о ноутбуке */
+        .laptop-details {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            margin-bottom: 80px;
+        }
+        
+        .laptop-specs {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+        }
+        
+        .laptop-name {
+            font-size: 2.2rem;
+            color: #1a365d;
+            margin-bottom: 25px;
+            font-weight: 800;
+        }
+        
+        .spec-list {
+            list-style-type: none;
+        }
+        
+        .spec-item {
+            padding: 15px 0;
+            border-bottom: 1px solid #eee;
+            font-size: 1.1rem;
+        }
+        
+        .spec-item strong {
+            color: #1a365d;
+        }
+        
+        .laptop-variants {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        
+        .variant-img {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .variant-img:hover {
+            transform: translateY(-5px);
+        }
+        
+        /* Магазины */
+        .stores-section {
+            text-align: center;
+            margin-bottom: 80px;
+        }
+        
+        .stores-title {
+            font-size: 2.2rem;
+            color: #1a365d;
+            margin-bottom: 40px;
+            font-weight: 800;
+        }
+        
+        .stores-container {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+        
+        .store-img {
+            width: 450px;
+            height: 300px;
+            border-radius: 10px;
+            object-fit: cover;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+            transition: transform 0.3s ease;
+        }
+        
+        .store-img:hover {
+            transform: scale(1.03);
+        }
+        
+        /* Нижняя шапка (футер) */
+        footer {
+            background-color: #1a365d;
+            color: white;
+            padding: 40px 5% 30px;
+            text-align: center;
+        }
+        
+        .footer-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .footer-title {
+            font-size: 1.8rem;
+            margin-bottom: 25px;
+            font-weight: 700;
+        }
+        
+        .footer-address {
+            font-size: 1.3rem;
+            margin-bottom: 30px;
+            line-height: 1.8;
+        }
+        
+        .footer-phones {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-top: 20px;
+        }
+        
+        .phone-number {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .phone-number i {
+            color: #4dabf7;
+        }
+        
+        .copyright {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #2d50a7;
+            font-size: 0.9rem;
+            color: #a0c4ff;
+        }
+        
+        /* Адаптивность */
+        @media (max-width: 992px) {
+            .modifications-section, .laptop-details {
+                grid-template-columns: 1fr;
+            }
+            
+            .stores-container {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .store-img {
+                width: 100%;
+                max-width: 450px;
+            }
+            
+            .footer-phones {
+                flex-direction: column;
+                gap: 15px;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                gap: 20px;
+            }
+            
+            .search-input {
+                width: 200px;
+            }
+            
+            .laptop-title {
+                font-size: 2.2rem;
+            }
+            
+            .nav-buttons {
+                width: 100%;
+                justify-content: center;
+            }
+            
+            .search-container {
+                width: 100%;
+                justify-content: center;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .laptop-title {
+                font-size: 1.8rem;
+            }
+            
+            .section-title, .laptop-name {
+                font-size: 1.5rem;
+            }
+            
+            .search-input {
+                width: 150px;
+            }
+            
+            .nav-btn, .search-btn {
+                padding: 8px 15px;
+                font-size: 0.9rem;
+            }
+        }

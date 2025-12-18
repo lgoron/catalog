@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechStore - магазин ноутбуков</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel=" stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 1. Шапка сайта -->
+    <header>
+        <div class="logo-container">
+            <div class="company-logo">
+                <img src="https://cdn-icons-png.flaticon.com/512/2456/2456708.png" alt="Логотип TechStore">
+            </div>
+            <div class="site-title">TechStore</div>
+        </div>
+
+        <div class="nav-buttons">
+            <button class="nav-btn"><i class="fas fa-laptop"></i> Каталог</button>
+            <button class="nav-btn"><i class="fas fa-shopping-cart"></i> Корзина</button>
+        </div>
+
+        <div class="search-container">
+            <input type="text" class="search-input" placeholder="Поиск ноутбуков...">
+            <button class="search-btn"><i class="fas fa-search"></i> Найти</button>
+        </div>
+    </header>
+
+    <div class="container">
+        <!-- 2. Фото ноутбука -->
+        <div class="laptop-image-section">
+            <img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1171&q=80"
+                 alt="Ноутбук ASUS ROG Zephyrus" class="laptop-main-img">
+        </div>
+
+        <!-- 3. Название ноутбука -->
+        <h1 class="laptop-title">ASUS ROG Zephyrus G14</h1>
+
+        <!-- 4. Модификации слева/справа -->
+        <section class="modifications-section">
+            <div class="modifications-left">
+                <h2 class="section-title">Основные характеристики</h2>
+                <ul class="mod-list">
+                    <li class="mod-item"><i class="fas fa-microchip"></i> Процессор: AMD Ryzen 9 7940HS</li>
+                    <li class="mod-item"><i class="fas fa-memory"></i> Оперативная память: 32 ГБ DDR5</li>
+                    <li class="mod-item"><i class="fas fa-hard-drive"></i> Накопитель: 1 ТБ SSD NVMe</li>
+                    <li class="mod-item"><i class="fas fa-desktop"></i> Экран: 14" QHD, 165 Гц</li>
+                    <li class="mod-item"><i class="fas fa-bolt"></i> Видеокарта: NVIDIA GeForce RTX 4060</li>
+                </ul>
+            </div>
+
+            <div class="modifications-right">
+                <h2 class="section-title">Дополнительные возможности</h2>
+                <ul class="mod-list">
+                    <li class="mod-item"><i class="fas fa-keyboard"></i> Клавиатура с RGB-подсветкой</li>
+                    <li class="mod-item"><i class="fas fa-wifi"></i> Wi-Fi 6E, Bluetooth 5.3</li>
+                    <li class="mod-item"><i class="fas fa-battery-full"></i> Аккумулятор: 76 Вт·ч</li>
+                    <li class="mod-item"><i class="fas fa-weight-hanging"></i> Вес: 1.72 кг</li>
+                    <li class="mod-item"><i class="fas fa-shield-alt"></i> Гарантия: 2 года</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- 5. Детальная информация о ноутбуке -->
+        <section class="laptop-details">
+            <div class="laptop-specs">
+                <h3 class="laptop-name">ASUS ROG Zephyrus G14</h3>
+                <ul class="spec-list">
+                    <li class="spec-item"><strong>Модель:</strong> GA402XV-N2041</li>
+                    <li class="spec-item"><strong>Операционная система:</strong> Windows 11 Pro</li>
+                    <li class="spec-item"><strong>Матрица:</strong> 14" IPS, 2560x1600, 165 Гц</li>
+                    <li class="spec-item"><strong>Цвет корпуса:</strong> Лунарный серый</li>
+                    <li class="spec-item"><strong>Порты:</strong> 2x USB-C, 2x USB-A, HDMI, кардридер</li>
+                    <li class="spec-item"><strong>Аудио:</strong> Динамики Dolby Atmos, массив микрофонов</li>
+                    <li class="spec-item"><strong>Охлаждение:</strong> Двухвентиляторная система</li>
+                </ul>
+            </div>
+
+            <div class="laptop-variants">
+                <img src="https://images.unsplash.com/photo-1603302576837-37561b2e2302?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1168&q=80"
+                     alt="Модификация ноутбука в сером цвете" class="variant-img">
+                <img src="https://images.unsplash.com/photo-1593640408182-31c70c8268f5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1142&q=80"
+                     alt="Модификация ноутбука в черном цвете" class="variant-img">
+            </div>
+        </section>
+
+        <!-- 6. Фото магазинов -->
+        <section class="stores-section">
+            <h2 class="stores-title">Наши магазины</h2>
+            <div class="stores-container">
+                <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+                     alt="Магазин TechStore в торговом центре" class="store-img">
+                <img src="https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+                     alt="Фирменный магазин TechStore" class="store-img">
+            </div>
+        </section>
+    </div>
+
+    <!-- 7. Нижняя шапка (футер) -->
+    <footer>
+        <div class="footer-content">
+            <h3 class="footer-title">TechStore - магазин ноутбуков</h3>
+            <div class="footer-address">
+                <p><i class="fas fa-map-marker-alt"></i> Адрес главного магазина:</p>
+                <p>г. Москва, ул. Тверская, д. 10, ТЦ "Электронный мир", 3 этаж</p>
+            </div>
+
+            <div class="footer-phones">
+                <div class="phone-number">
+                    <i class="fas fa-phone"></i> +7 (495) 123-45-67
+                </div>
+                <div class="phone-number">
+                    <i class="fas fa-mobile-alt"></i> +7 (999) 876-54-32
+                </div>
+            </div>
+
+            <div class="copyright">
+                &copy; 2023 TechStore. Все права защищены.
+            </div>
+        </div>
+    </footer>
+
+   <script src="script.js"></script>
+</html> 
